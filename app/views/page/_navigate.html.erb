@@ -1,0 +1,35 @@
+<div class="navbar navbar-static-top">
+    <div class="navbar-inner">
+      <div class="container-fluid">
+      
+        <a class="btn btn-navbar" data-target=".nav-collapse" data-toggle="collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        
+        </a>
+        <!-- Be sure to leave the brand out there if you want it shown -->
+        <a class="brand" href="#">  My Wish List</a>
+      
+        <div class="container-fluid nav-collapse">
+          <!-- .nav, .navbar-search, .navbar-form, etc -->
+          <ul class="nav nav-pills ">
+              <li><%=link_to '<i class="icon-home"></i> Home'.html_safe, page_home_path %></li> 
+               <li><%=link_to '<i class="icon-star"></i> My Wish'.html_safe, page_my_wish_path %></li>       
+              <li><%=link_to '<i class="icon-star"></i> Who I am'.html_safe, page_who_i_am_path %></li> 
+              <li><%=link_to '<i class="icon-star"></i> Contact Us'.html_safe, page_contact_us_path %></li> 
+             
+            
+            
+            
+            
+          </ul>   
+          <ul class="nav nav-pills pull-right">            
+                <li class= "nav-tabs active"><%= link_to "Sign Out", page_index_path %>   
+                </li>   
+                      
+          </ul>      
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+  </div>
